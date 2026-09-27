@@ -6,7 +6,7 @@
   <title>AI for Money · Vibe Earning | 圈养你的 AI 舰队 · 后劳动时代生存搞钱分类平台</title>
 
   <!-- SEO · GEO -->
-  <meta name="description" content="AI 正在加速取代人类，唯一的出路是让 AI 为你赚钱！AI for Money · Vibe Earning 平台：收录 18+ 种全球最新 AI Agent 赚钱兵种与实战配方，告别内卷的 Vibe Coding，组建属于你的 7x24h 硅基舰队。">
+  <meta name="description" content="AI 正在加速取代人类，唯一的出路是让 AI 为你赚钱！AI for Money · Vibe Earning 平台：收录 20+ 种全球最新 AI Agent 赚钱兵种与实战配方，告别内卷的 Vibe Coding，组建属于你的 7x24h 硅基舰队。">
   <meta name="keywords" content="AI for Money, Vibe Earning, 硅基舰队, Agent赚钱, 后劳动时代, 智能体副业, 一人工业, 自动化出海, 硅基现金流, 现实主权, TrustlessX">
   <meta name="author" content="Gewenbo">
   <link rel="canonical" href="https://ai-for-money.psyverse.fun/">
@@ -1383,9 +1383,63 @@
   <!-- Database & Logic Script -->
   <script>
     // -------------------------------------------------------------
-    // 1. Comprehensive Database of 18 Real-World Agent Money-Making Recipes
+    // 1. Comprehensive Database of 20+ Real-World Agent Money-Making Recipes
     // -------------------------------------------------------------
     const RECIPES = [
+      {
+        id: "languo-short-drama",
+        title: "蓝果短剧 · 12 节点 GPU 原生短剧与出海切片工场",
+        fleetRole: "AI 原生短剧算力造币机",
+        category: "content",
+        difficulty: "low-code",
+        currency: "usd",
+        cycle: "weekly",
+        badge: "flagship",
+        badgeText: "12节点GPU实测",
+        icon: "🎬",
+        desc: "依托 12 组高配独立 GPU 算力集群，专攻玄幻/科幻/怪谈/无限流四大高壁垒题材。单集制作成本仅真人剧 8%，7天一部。融合火山哥情绪切片与出海套利逻辑：黄金三秒反转、Voicebox 情绪声音克隆、Whisper 自动出海多语言对齐，公域引流结合自主数字收银闭环。",
+        monthlyEst: "$4,000 - $25,000 / mo (¥28,000 - ¥180,000)",
+        minMonthlyUsd: 4000,
+        weeklyHours: 4,
+        hotScore: 100,
+        techStack: ["12-GPU Cluster", "Kling/Flux", "Voicebox", "Whisper", "FFmpeg", "Web3 EVM"],
+        demoUrl: "https://bluefruit.psyverse.fun",
+        modelDesc: "【算力与情绪双轮造币闭环】由 12 组分布式 GPU 节点全天候集群作业：节点 1-4 负责角色一致性分镜生图，节点 5-8 负责首尾帧图生视频运镜，节点 9-10 负责 Voicebox 情绪声音克隆与出海多语言字幕，节点 11-12 负责自动去重卡点混剪。前端片库挂载蓝果厂牌，结合海外 TikTok / YouTube Shorts 创作者基金与国内独立自贩机单集付费，0% 平台抽成直通个人钱包。",
+        sop: [
+          { title: "黄金三秒与爆款情绪剧本", desc: "大模型逆向千万级充值短剧，提取'3秒立冲突、45秒一反转、集尾留悬念'的黄金剧本，生成结构化分镜提示词。" },
+          { title: "12 节点 GPU 并行生图与运镜", desc: "角色 DNA 锁定面孔发型服装，12 节点分布式流水线并发运行文生图与可灵首尾帧图生视频，单集生成压缩至数小时。" },
+          { title: "Voicebox 声音克隆与多语言出海", desc: "提取原片配音情绪，结合 Whisper 自动转录多语言字幕（英语/西语/印尼语），一键生成海外本土化高客单视频。" },
+          { title: "全网矩阵分发与现实主权收银", desc: "9 大社媒平台自动铺量发布，前 5 集免费引流爆款悬念，第 6 集引导扫码解锁（直结微信/支付宝/Base 链上秒结）。" }
+        ],
+        pitfalls: "角色一致性必须在 STEP 2 钉死 Seed 与 LoRA 权重，杜绝跳脸；严禁依赖第三方易扣量分销，务必沉淀私域或自持自贩机收银。"
+      },
+      {
+        id: "huoshan-arbitrage-fleet",
+        title: "火山派 · 跨国流量套利与开源工具一人公司",
+        fleetRole: "人性情绪与信息差收割机",
+        category: "traffic",
+        difficulty: "no-code",
+        currency: "usd",
+        cycle: "instant",
+        badge: "hot",
+        badgeText: "火山哥实战哲学",
+        icon: "🌋",
+        desc: "深度融合推特实操派 KOL @huoshan007 的野蛮搞钱哲学：拒绝买贵 SaaS，白嫖开源工具与免费 API。搭建 AI 虚拟人订阅变现、闲鱼虚拟资料无货源秒发、爆款短剧无水印解析 (Cobalt) 与出海跨国剪刀差变现闭环。",
+        monthlyEst: "$2,000 - $15,000 / mo (¥15,000 - ¥100,000)",
+        minMonthlyUsd: 2000,
+        weeklyHours: 3,
+        hotScore: 98,
+        techStack: ["Cobalt API", "Flux/SD", "Voicebox", "Xianyu Auto", "TikTok", "Gumroad"],
+        demoUrl: "https://x.com/huoshan007",
+        modelDesc: "【以终为始的人性变现闭环】围绕荷尔蒙、好奇心、求知欲与暴富心理四大刚需。通过开源工具替代昂贵商业软件，利用国内成熟的人性打法与数字资产降维打击海外高单价市场。从公域评论区精准截流，到无货源自动化发货，一人即可操盘一支高机动性的数字雇佣军。",
+        sop: [
+          { title: "高敏锐度套利信息差捕捉", desc: "跟踪海外最前沿开源项目与热门玩法，避开二手卖课信息，第一时间测试冷门开源神器。" },
+          { title: "低成本替代工具链搭建", desc: "用 Cobalt 替代收费去水印软件，用开源 Voicebox 替代昂贵配音 SaaS，用免费算力搭建轻量级工作流。" },
+          { title: "虚拟资产与无货源上架", desc: "搜罗高价值实战资料包与数字工具，在闲鱼加价上架并配置全自动发货机器人，零库存零物流成本。" },
+          { title: "跨平台多级收银闭环", desc: "海内使用微信/支付宝个人码秒结，海外结合 Gumroad/PayPal/Web3 链上收款，资金 100% 自主掌控。" }
+        ],
+        pitfalls: "切忌无脑人肉搬砖，必须重视防风控、防设备指纹与随机延时；红海竞争期须结合自主开发能力微创新。"
+      },
       {
         id: "gumroad-xianyu-vending",
         title: "Gumroad 全球美金自贩机与闲鱼数字矩阵",
