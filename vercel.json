@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "vibeearning.psyverse.fun"
+        }
+      ],
+      "destination": "https://ai-for-money.psyverse.fun/$1",
+      "permanent": true
+    }
+  ]
+}
