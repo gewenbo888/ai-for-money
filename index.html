@@ -1113,6 +1113,134 @@
       text-decoration: none;
     }
 
+    /* Cashflow Calculator Banner */
+    .calc-banner {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.05) 50%, rgba(17, 26, 46, 0.7) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+    .calc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .calc-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .calc-title span {
+      color: var(--accent-emerald);
+    }
+    .calc-chips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .calc-chip {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 11px 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s;
+      user-select: none;
+    }
+    .calc-chip:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.06);
+    }
+    .calc-chip.active {
+      border-color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.15);
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+    }
+    .calc-chip-check {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      border: 1.5px solid var(--text-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: transparent;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .calc-chip.active .calc-chip-check {
+      background: var(--accent-emerald);
+      border-color: var(--accent-emerald);
+      color: #022013;
+      font-weight: 900;
+    }
+    .calc-chip-info {
+      flex: 1;
+    }
+    .calc-chip-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+    .calc-chip-val {
+      font-size: 11px;
+      color: var(--accent-emerald);
+      font-family: var(--font-mono);
+    }
+    .calc-result-box {
+      background: rgba(6, 9, 19, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .calc-result-metric {
+      display: flex;
+      flex-direction: column;
+    }
+    .calc-result-lbl {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .calc-result-val {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--accent-emerald);
+      font-family: var(--font-mono);
+    }
+    .calc-result-recom {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      flex: 1;
+      min-width: 220px;
+    }
+    .calc-result-recom b {
+      color: var(--text-main);
+    }
+
     @media (max-width: 768px) {
       .app-wrap { padding: 20px 16px 80px; }
       .filter-matrix { padding: 16px; }
@@ -1182,6 +1310,79 @@
         </div>
       </div>
     </header>
+
+    <!-- 硅基搞钱收益测算器 (Fleet Cashflow Simulator) -->
+    <section class="calc-banner" id="calc-banner">
+      <div class="calc-header">
+        <div class="calc-title">
+          <span>⚡ 硅基搞钱收益测算器 (Fleet Cashflow Simulator)</span>
+        </div>
+        <div style="font-size: 12px; color: var(--text-dim); font-family: var(--font-mono);">
+          根据你拥有的算力与变现资产，实时测算月被动现金流
+        </div>
+      </div>
+
+      <div class="calc-chips" id="calc-chips">
+        <div class="calc-chip active" data-usd="6500" data-role="蓝果12节点短剧工场">
+          <div class="calc-chip-check">✓</div>
+          <div class="calc-chip-info">
+            <div class="calc-chip-title">🖥️ 12 节点 GPU 算力集群</div>
+            <div class="calc-chip-val">+$4,000 - $25,000 / 月</div>
+          </div>
+        </div>
+
+        <div class="calc-chip active" data-usd="4500" data-role="现实主权独立收银机">
+          <div class="calc-chip-check">✓</div>
+          <div class="calc-chip-info">
+            <div class="calc-chip-title">🌐 独立域名 + 0% 抽成自贩机</div>
+            <div class="calc-chip-val">+$3,000 - $18,000 / 月</div>
+          </div>
+        </div>
+
+        <div class="calc-chip" data-usd="3500" data-role="海外短视频切片工场">
+          <div class="calc-chip-check">✓</div>
+          <div class="calc-chip-info">
+            <div class="calc-chip-title">📱 跨平台海外分发矩阵</div>
+            <div class="calc-chip-val">+$2,000 - $15,000 / 月</div>
+          </div>
+        </div>
+
+        <div class="calc-chip active" data-usd="3000" data-role="链上资产自动化结算">
+          <div class="calc-chip-check">✓</div>
+          <div class="calc-chip-info">
+            <div class="calc-chip-title">⚡ Web3 / EVM 钱包自持 (gewenbo.eth)</div>
+            <div class="calc-chip-val">+$1,500 - $10,000 / 月</div>
+          </div>
+        </div>
+
+        <div class="calc-chip active" data-usd="2500" data-role="开源悬赏巡检 Agent">
+          <div class="calc-chip-check">✓</div>
+          <div class="calc-chip-info">
+            <div class="calc-chip-title">🤖 GitHub 自动化开源悬赏 Agent</div>
+            <div class="calc-chip-val">+$1,500 - $8,000 / 月</div>
+          </div>
+        </div>
+
+        <div class="calc-chip" data-usd="2000" data-role="极客数字书籍自贩机">
+          <div class="calc-chip-check">✓</div>
+          <div class="calc-chip-info">
+            <div class="calc-chip-title">📚 极客数字书籍与 Obsidian 双链库</div>
+            <div class="calc-chip-val">+$1,000 - $5,000 / 月</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-result-box">
+        <div class="calc-result-metric">
+          <span class="calc-result-lbl">预估被动现金流 (Run-Rate)</span>
+          <span class="calc-result-val" id="calc-usd-val">~$16,500 / mo</span>
+          <span style="font-size: 11px; color: var(--text-dim);" id="calc-cny-val">折合约 ¥118,800 元/月</span>
+        </div>
+        <div class="calc-result-recom" id="calc-recom">
+          💡 <b>最优变现编队组合</b>：已匹配 4 组核心生产力资产，建议重点运行 <b>蓝果 12 节点短剧工场</b> + <b>0% 抽成自贩机</b> + <b>GitHub 悬赏巡检 Agent</b>，实现全天候 7×24h 自动化闭环。
+        </div>
+      </div>
+    </section>
 
     <!-- iYifan-Style Multi-Dimensional Filter Matrix (爱壹帆分类系统) -->
     <section class="filter-matrix">
@@ -2330,6 +2531,43 @@
         toastMsg.classList.remove('show');
       }, 3000);
     }
+
+    // -------------------------------------------------------------
+    // 8. Dynamic Cashflow Calculator Handler
+    // -------------------------------------------------------------
+    const calcChips = document.querySelectorAll('#calc-chips .calc-chip');
+    const calcUsdVal = document.getElementById('calc-usd-val');
+    const calcCnyVal = document.getElementById('calc-cny-val');
+    const calcRecom = document.getElementById('calc-recom');
+
+    function updateCashflowCalc() {
+      let totalUsd = 0;
+      const activeRoles = [];
+      calcChips.forEach(chip => {
+        if (chip.classList.contains('active')) {
+          totalUsd += parseInt(chip.dataset.usd || '0', 10);
+          activeRoles.push(chip.dataset.role);
+        }
+      });
+
+      calcUsdVal.innerText = `~$${totalUsd.toLocaleString()} / mo`;
+      const cny = Math.round(totalUsd * 7.2);
+      calcCnyVal.innerText = `折合约 ¥${cny.toLocaleString()} 元/月`;
+
+      if (activeRoles.length === 0) {
+        calcRecom.innerHTML = `⚠️ <b>尚未勾选资产</b>：请选择你拥有的算力或平台资源，实时推演你的最优变现架构。`;
+      } else {
+        const topRoles = activeRoles.slice(0, 3).map(r => `<b>${r}</b>`).join(' + ');
+        calcRecom.innerHTML = `💡 <b>最优变现编队组合</b>：已匹配 ${activeRoles.length} 组核心生产力资产，建议重点运行 ${topRoles}，实现全天候 7×24h 自动化闭环。`;
+      }
+    }
+
+    calcChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chip.classList.toggle('active');
+        updateCashflowCalc();
+      });
+    });
   </script>
 </body>
 </html>
