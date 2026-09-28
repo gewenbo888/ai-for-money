@@ -1506,6 +1506,15 @@
         <div id="d-pitfalls" style="background: rgba(244, 63, 94, 0.08); border: 1px solid rgba(244, 63, 94, 0.25); border-radius: 12px; padding: 16px; color: #fca5a5; font-size: 13px; line-height: 1.6;"></div>
       </div>
     </div>
+    
+      <div class="detail-section">
+        <div class="detail-title" style="display:flex; justify-content:space-between; align-items:center;">
+          <span>💻 核心 Agent 提示词与自动化代码 (Prompt & Script Template)</span>
+          <button id="d-btn-copy-code" class="btn-copy-code" style="background: rgba(16,185,129,0.15); border: 1px solid #10b981; color: #34d399; border-radius: 6px; padding: 4px 10px; font-size: 11px; cursor: pointer; transition: 0.2s;">📋 复制代码/提示词</button>
+        </div>
+        <pre id="d-code-block" style="background: #020617; border: 1px solid rgba(16,185,129,0.3); border-radius: 10px; padding: 14px; font-family: var(--font-mono); font-size: 12px; color: #a7f3d0; overflow-x: auto; max-height: 220px; white-space: pre-wrap; line-height: 1.5;"></pre>
+      </div>
+
     <div class="drawer-footer">
       <button id="d-btn-add-portfolio" class="btn-action-big">
         + 编入我的硅基舰队
@@ -1539,9 +1548,12 @@
         <p style="color: var(--text-dim); font-size: 13px; text-align: center; margin-top: 40px;">暂无编入舰队的兵种，请浏览卡片并点击「+ 编入舰队」</p>
       </div>
     </div>
-    <div class="drawer-footer">
-      <button id="p-btn-clear" class="btn-action-big" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; box-shadow: none;">
-        解散在编舰队
+    <div class="drawer-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button id="p-btn-export-plan" class="btn-action-big" style="background: linear-gradient(135deg, #10b981, #059669); color: #022013; flex: 1;">
+        📋 复制完整作战方案 (Markdown)
+      </button>
+      <button id="p-btn-clear" class="btn-action-big" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; box-shadow: none; width: auto; padding: 12px 18px;">
+        清空
       </button>
     </div>
   </div>
@@ -2354,6 +2366,142 @@
     const dBtnDemo = document.getElementById('d-btn-demo');
     let activeRecipe = null;
 
+    
+    // -------------------------------------------------------------
+    // Code Snippets & Prompt Templates for 15 Recipes
+    // -------------------------------------------------------------
+    const RECIPE_CODE_TEMPLATES = {
+      "languo-short-drama": `# 蓝果短剧 12 节点 GPU 调度与分镜压制流水线
+import os, json, subprocess
+
+def dispatch_episode(title, genre, scenes):
+    # Node 1-4: Flux.1-Dev 角色一致性分镜生图
+    print(f"[*] Node 1-4: Generating 4K keyframes for {title}...")
+    # Node 5-8: 可灵 Kling 首尾帧图生视频 2.5D 运镜
+    print(f"[*] Node 5-8: Generating 60fps video clips...")
+    # Node 9-10: Voicebox 情绪声音克隆与多语言字幕
+    print(f"[*] Node 9-10: Cloning emotional voice & generating Whisper subtitles...")
+    # Node 11-12: FFmpeg 确定性混剪与无水印母带压制
+    cmd = "ffmpeg -i clip1.mp4 -i clip2.mp4 -filter_complex concat -c:v libx264 -crf 18 output.mp4"
+    subprocess.run(cmd, shell=True)
+    print(f"[✔] 剧集压制完成，挂载独立自贩机支付入口: https://bluefruit.psyverse.fun")`,
+
+      "huoshan-arbitrage-fleet": `# 火山哥跨国套利：Cobalt 无水印原片抓取与出海切片
+import requests, subprocess
+
+def process_arbitrage(source_video_url):
+    # 1. 白嫖 Cobalt API 高清解析无水印源视频
+    res = requests.post("https://api.cobalt.tools/api/json", json={"url": source_video_url, "vQuality": "max"}).json()
+    video_url = res.get("url")
+    
+    # 2. 本地下载无水印原片
+    subprocess.run(f"curl -o raw_source.mp4 '{video_url}'", shell=True)
+    
+    # 3. 提取前 3 秒黄金冲突与 45 秒高燃卡点，生成出海短剧切片
+    print("[✔] 切片完成，自动推流至 TikTok / YouTube Shorts 创作者基金矩阵")`,
+
+      "bounty-hunter": `# 开源悬赏自动巡检与生产级补丁提交器 (Bounty Hunter)
+import requests, subprocess, json
+
+def execute_bounty_fix(repo, issue_number, bounty_amount):
+    print(f"[*] 发现悬赏任务: {repo} #{issue_number} (${bounty_amount})")
+    # 1. 创建干净的修复分支
+    branch = f"fix/bounty-issue-{issue_number}"
+    subprocess.run(f"git checkout -b {branch}", shell=True)
+    
+    # 2. 注入最小变更与完备单测 (严禁冗余重构)
+    # 3. 跑通所有现有测试套件: pytest / npm test
+    # 4. 提交 PR 并注入统一收款钱包: gewenbo.eth / 0x240C74A953Fc04Fe8cD713c68b53e94d9b449F8C
+    print("[✔] PR 提交完成，等待合并与链上 USDC 秒级打款。")`,
+
+      "vending-sovereignty": `// Web3 EVM 秒级链上收银对账与确权监听器 (Base / Arbitrum)
+import { ethers } from "ethers";
+
+const provider = new ethers.JsonRpcProvider("https://mainnet.base.org");
+const merchant = "0x240C74A953Fc04Fe8cD713c68b53e94d9b449F8C"; // gewenbo.eth
+const usdc = new ethers.Contract("0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", [
+  "event Transfer(address indexed from, address indexed to, uint256 value)"
+], provider);
+
+usdc.on(usdc.filters.Transfer(null, merchant), (from, to, val) => {
+  const amount = ethers.formatUnits(val, 6);
+  console.log(\`[✔] 收到 \${amount} USDC！0% 平台抽成，秒级激活数字资产交付。\`);
+});`,
+
+      "gumroad-xianyu-vending": `# 闲鱼 / Gumroad 数字自贩机自动秒发 Webhook
+from fastapi import FastAPI, Request
+app = FastAPI()
+
+@app.post("/webhook/order-paid")
+async def handle_order(req: Request):
+    payload = await req.json()
+    order_id = payload.get("order_id")
+    buyer_email = payload.get("email")
+    # 自动发放百度网盘秒传链 / Gumroad 下载 Token
+    print(f"[*] 订单 {order_id} 支付成功，自动发货中...")
+    return {"status": "dispatched", "order": order_id}`
+    };
+
+    function getCodeSnippet(item) {
+      if (RECIPE_CODE_TEMPLATES[item.id]) return RECIPE_CODE_TEMPLATES[item.id];
+      return `# 【\${item.title}】自动化 Agent 执行脚本模版
+# 技术栈: \${item.techStack.join(" + ")}
+# 预期月产值: \${item.monthlyEst}
+
+def run_agent_workflow():
+    print("[1/4] 启动 \${item.fleetRole} 智能体巡航...")
+    print("[2/4] 执行核心 SOP: \${item.sop[0].title}")
+    print("[3/4] 采集数据并调用自动化 API 接口")
+    print("[4/4] 汇聚现金流至统一收银中枢: https://psyverse.fun/payment")
+
+if __name__ == "__main__":
+    run_agent_workflow()`;
+    }
+
+    // Export Fleet Execution Plan in Markdown
+    const pBtnExportPlan = document.getElementById('p-btn-export-plan');
+    if (pBtnExportPlan) {
+      pBtnExportPlan.addEventListener('click', () => {
+        if (!userPortfolio || userPortfolio.length === 0) {
+          showToast('舰队暂无编入兵种，请先挑选变现模式！');
+          return;
+        }
+
+        const totalUsd = userPortfolio.reduce((sum, item) => sum + item.minMonthlyUsd, 0);
+        const totalHours = userPortfolio.reduce((sum, item) => sum + item.weeklyHours, 0);
+        const dateStr = new Date().toISOString().split('T')[0];
+
+        let md = `# 🛸 个人硅基搞钱舰队 · 全自动作战执行蓝图\n\n`;
+        md += `> 生成时间: \${dateStr} | 舰队编制: \${userPortfolio.length} 个兵种 | 预估月现金流: $\${totalUsd.toLocaleString()} USD (~¥\${(totalUsd * 7.2).toLocaleString()} CNY) | 每周指挥工时: ~\${totalHours} 小时\n\n`;
+        md += `## 📋 在编硅基兵种矩阵\n\n`;
+
+        userPortfolio.forEach((item, idx) => {
+          md += `### \${idx + 1}. \${item.icon} \${item.title}\n`;
+          md += `- **兵种角色**: \${item.fleetRole}\n`;
+          md += `- **预期月收入**: \${item.monthlyEst}\n`;
+          md += `- **每周投入工时**: ~\${item.weeklyHours} 小时\n`;
+          md += `- **核心技术栈**: \${item.techStack.join(" · ")}\n`;
+          md += `- **实战 4 步 SOP**:\n`;
+          item.sop.forEach((s, sIdx) => {
+            md += `  \${sIdx + 1}. **\${s.title}**: \${s.desc}\n`;
+          });
+          md += `- **防坑要点**: \${item.pitfalls}\n\n`;
+        });
+
+        md += `## 💳 官方独立收款与确权坐标\n\n`;
+        md += `- **统一收银主页**: https://psyverse.fun/payment\n`;
+        md += `- **Web3 EVM 钱包**: \`0x240C74A953Fc04Fe8cD713c68b53e94d9b449F8C\` (\`gewenbo.eth\`)\n`;
+        md += `- **数字自贩机**: https://psyverse.fun/pay\n\n`;
+        md += `--- \n*由 AI for Money · Vibe Earning (https://ai-for-money.psyverse.fun) 全自动导出*\n`;
+
+        navigator.clipboard.writeText(md).then(() => {
+          showToast('✔ 完整作战方案 (Markdown) 已复制到剪贴板！');
+        }).catch(() => {
+          showToast('✔ 作战方案已生成');
+        });
+      });
+    }
+
     window.openDetail = function(id) {
       const item = RECIPES.find(r => r.id === id);
       if (!item) return;
@@ -2390,6 +2538,22 @@
       `).join('');
 
       dPitfalls.innerHTML = `<strong>⚠️ 核心风险防范：</strong> ${item.pitfalls}`;
+
+      const dCodeBlock = document.getElementById('d-code-block');
+      if (dCodeBlock) {
+        dCodeBlock.innerText = getCodeSnippet(item);
+      }
+      const dBtnCopyCode = document.getElementById('d-btn-copy-code');
+      if (dBtnCopyCode) {
+        dBtnCopyCode.onclick = function() {
+          if (dCodeBlock) {
+            navigator.clipboard.writeText(dCodeBlock.innerText).then(() => {
+              showToast('✔ 代码/提示词已复制！');
+            });
+          }
+        };
+      }
+
 
       const inP = userPortfolio.some(p => p.id === item.id);
       dBtnAddPortfolio.innerText = inP ? "✔ 已在编入硅基舰队" : "+ 编入我的硅基舰队";
