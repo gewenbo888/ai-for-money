@@ -1113,6 +1113,123 @@
       text-decoration: none;
     }
 
+    /* 80 Billion People Silicon UBI Banner */
+    .ubi-banner {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(139, 92, 246, 0.08) 50%, rgba(17, 26, 46, 0.8) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .ubi-banner::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ubi-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .ubi-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ubi-title span.tag {
+      background: rgba(245, 158, 11, 0.2);
+      color: var(--accent-gold);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+    .ubi-summary {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #cbd5e1;
+      margin-bottom: 18px;
+    }
+    .ubi-summary strong {
+      color: #f59e0b;
+    }
+    .ubi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .ubi-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 16px;
+      transition: all 0.25s ease;
+    }
+    .ubi-card:hover {
+      border-color: rgba(245, 158, 11, 0.5);
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-2px);
+    }
+    .ubi-card-step {
+      font-size: 11px;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .ubi-card-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .ubi-card-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .ubi-footer-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .ubi-stat-pill {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .ubi-stat-pill strong {
+      color: var(--accent-emerald);
+      font-family: var(--font-mono);
+    }
+
     /* Cashflow Calculator Banner */
     .calc-banner {
       background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.05) 50%, rgba(17, 26, 46, 0.7) 100%);
@@ -1268,7 +1385,7 @@
         <div class="top-stats-capsules">
           <div class="capsule">
             <span class="capsule-dot"></span>
-            <span>已收录: <strong>18 组兵种</strong></span>
+            <span>已收录: <strong>22+ 组战术兵种</strong></span>
           </div>
           <a href="https://bluefruit.psyverse.fun" target="_blank" class="capsule" style="text-decoration:none;color:var(--text-main);border-color:var(--accent-glow)">
             <span>🎬 蓝果短剧厂牌 ↗</span>
@@ -1303,7 +1420,7 @@
             <span>📜 阅读《后劳动时代 Vibe Earning 生存宣言》</span>
           </button>
           <button id="btn-jump-fleet" class="btn-fleet-jump">
-            <span>🛸 挑选我的硅基雇佣军 (18 组战术兵种)</span>
+            <span>🛸 挑选我的硅基雇佣军 (22+ 组战术兵种)</span>
           </button>
         </div>
       </div>
@@ -1316,6 +1433,62 @@
         </div>
       </div>
     </header>
+
+    <!-- 80 亿人硅基普遍基本收入 (Silicon UBI) · 普惠路线图 -->
+    <section class="ubi-banner" id="ubi-banner">
+      <div class="ubi-header">
+        <div class="ubi-title">
+          <span>🌍 全球 80 亿人硅基普遍基本收入 (Silicon UBI) · 自由宣言与普惠路线图</span>
+          <span class="tag">SILICON UBI ROADMAP</span>
+        </div>
+        <div style="font-size: 12px; color: var(--accent-gold); font-family: var(--font-mono);">
+          人类负责生活 (Vibe) · 硅基雇佣军托底全球 80 亿人 (Earning)
+        </div>
+      </div>
+
+      <div class="ubi-summary">
+        传统的再分配福利因官僚寻租、地缘隔阂与恶性通胀注定无法拯救人类。面对即将取代 90% 脑力劳动的硅基生产力狂潮，<strong>人类通向自由的唯一终极答案不是抵制 AI，而是将每一个地球人从“劳动力出卖者”转变为“硅基舰队总司令”</strong>。通过开源智能体、无头算力节点与去中心化结算，人人享有属于自己的云端造币小队，实现真正的现实主权与普遍基本收入。
+      </div>
+
+      <div class="ubi-grid">
+        <div class="ubi-card">
+          <div class="ubi-card-step"><span>01</span> PHASE · 先驱实证</div>
+          <div class="ubi-card-title">一人工业联合体闭环 (Sovereign Individual)</div>
+          <div class="ubi-card-desc">
+            实操验证无肉身雇佣的造币闭环：以 12 节点 GPU 蓝果短剧厂牌、开源悬赏自动化猎人（6 PRs Merged，斩获 $650+ USDC）与 0% 抽成自贩机为样板，单人每月被动捕获 $3,000 - $25,000 现金流。
+          </div>
+        </div>
+
+        <div class="ubi-card">
+          <div class="ubi-card-step"><span>02</span> PHASE · 开源网格</div>
+          <div class="ubi-card-title">零门槛硅基雇佣军容器 (Open Silicon Grid)</div>
+          <div class="ubi-card-desc">
+            将经过实战验证的 22+ 搞钱配方标准化为 Docker / Node.js 一键镜像与轻量化 Agent。无需编程功底，任何人只需填入意图与私钥，即可 1 分钟在本地或便宜 VPS 上启动 7×24h 自动化赚钱节点。
+          </div>
+        </div>
+
+        <div class="ubi-card">
+          <div class="ubi-card-step"><span>03</span> PHASE · 80亿人普惠</div>
+          <div class="ubi-card-title">硅基全人类 UBI 自由联盟 (Universal Silicon UBI)</div>
+          <div class="ubi-card-desc">
+            每个地球人出生即自动绑定云端硅基智能体矿工，接入全球算力与价值交换网络。秒级链上确权（Base/Arbitrum）与本地生活结算，彻底终结匮乏与内卷，人类重归艺术、哲学、科学与爱。
+          </div>
+        </div>
+      </div>
+
+      <div class="ubi-footer-bar">
+        <div class="ubi-stat-pill">
+          <span>⚡ 实测已确权悬赏现金流: <strong>$650.00+ USD (~¥4,680)</strong></span>
+          <span style="margin: 0 8px; color: var(--border-subtle);">|</span>
+          <span>🛸 活跃战术兵种: <strong>22+ 组作战单元</strong></span>
+          <span style="margin: 0 8px; color: var(--border-subtle);">|</span>
+          <span>🌐 官方统一结算: <strong>psyverse.fun/payment</strong></span>
+        </div>
+        <button id="btn-open-manifesto-ubi" class="btn-manifesto" style="padding: 6px 14px; font-size: 12px; cursor: pointer;">
+          <span>📜 阅读完整 80 亿人硅基生存宣言 ↗</span>
+        </button>
+      </div>
+    </section>
 
     <!-- 硅基搞钱收益测算器 (Fleet Cashflow Simulator) -->
     <section class="calc-banner" id="calc-banner">
@@ -1594,6 +1767,24 @@
           <p style="font-weight: 800; font-size: 15px; color: #ffffff;">你负责生活与意图 (Vibe)，AI 负责 7×24h 搞钱 (Earning)。</p>
           <p style="margin-top: 6px; font-size: 13px; color: var(--text-muted);">
             你在高速公路上吹着风、听着歌，后方的硅基舰队正在全球互联网上替你捕获现金流。这才是技术平权的终极意义，也是每一个普通人通往「现实主权」的诺亚方舟。
+          </p>
+        </div>
+
+        <h3>四、终极普惠：全球 80 亿人的硅基普遍基本收入 (Silicon UBI)</h3>
+        <p>
+          当 AI 接管了绝大多数的代码、设计、写作、翻译、跨境履约乃至科研分析，传统的“以肉身工时交换面包”的社会契约彻底瓦解。许多人寄希望于传统国家的“再分配税收 UBI”，但那依然是把个体的生存尊严拱手交给官僚机器与地缘政治，并且随时会被通货膨胀与权力垄断所吞噬。
+        </p>
+        <p>
+          <strong>真正的自由，来自于“硅基主权普遍基本收入 (Silicon Sovereign UBI)”：</strong><br>
+          技术平权的终局，不是让少数科技寡头垄断算力铸币税，而是让每一个地球人——无论是硅谷极客、小城青年、还是发展中国家的普通家庭——都能够在云端零门槛拥有一套自己的硅基托底舰队。
+        </p>
+        <p>
+          这支由开源 Agent、无头节点和去中心化结算网络构成的造币蜂群，7×24 小时不间断巡检开源悬赏、运营数字自贩机、做跨国信息差套利。每一分产出 0% 抽成直达你的本地钱包，为你提供不可剥夺的生存底气。
+        </p>
+        <div class="manifesto-quote-box" style="border-left-color: var(--accent-gold);">
+          <p style="font-weight: 800; font-size: 15px; color: #f59e0b;">让技术进化造福全人类 80 亿人，终结生存内卷。</p>
+          <p style="margin-top: 6px; font-size: 13px; color: var(--text-muted);">
+            当全球 80 亿人每个人都拥有属于自己的硅基雇佣军托底基本生存时，人类文明才真正走出丛林法则，进入按需创造、仰望星空、探索真理与享受爱的全新黄金纪元。
           </p>
         </div>
       </div>
@@ -1992,30 +2183,30 @@
       },
       {
         id: "bounty-hunter",
-        title: "GitHub Trending 自动化赏金猎人",
-        fleetRole: "开源赏金猎犬",
+        title: "GitHub Trending & Algora 开源悬赏巡检猎人",
+        fleetRole: "全网开源赏金造币猎犬",
         category: "consulting",
         difficulty: "hardcore",
         currency: "usd",
         cycle: "instant",
-        badge: "trending",
-        badgeText: "极客专属",
+        badge: "flagship",
+        badgeText: "已实测6个PR合并·确权$650",
         icon: "💻",
-        desc: "Agent 7x24小时巡检 GitHub 上带 Bounty / Good First Issue 标签的开源项目，自动生成修复 PR 与测试用例，赚取丰厚赏金。",
-        monthlyEst: "$2,000 - $10,000",
-        minMonthlyUsd: 2000,
-        weeklyHours: 6,
-        hotScore: 90,
-        techStack: ["GitHub GraphQL", "Docker", "Pytest", "Claude 3.7"],
-        demoUrl: "https://github.com/gewenbo888",
-        modelDesc: "开源生态的技能套利。Algora, Gitcoin, IssueHunt 等平台上大量 Web3 与开源项目为 Bug 修复与功能扩展提供 $50 - $1,000 美金赏金。",
+        desc: "以 Algora, Polar.sh 与 GitHub 为核心的自动化悬赏巡检矩阵。Agent 7×24小时自动发现赏金工单，现场生成无侵入最小补丁与完备单测，提交 PR 直达维护者合并，秒级链上 USDC 打款确权。",
+        monthlyEst: "$3,000 - $12,000 / mo (已确权 $650)",
+        minMonthlyUsd: 3000,
+        weeklyHours: 4,
+        hotScore: 99,
+        techStack: ["Algora API", "GitHub GraphQL", "Base EVM", "Pytest", "Claude 3.7", "Hermetic Gates"],
+        demoUrl: "https://psyverse.fun/payment",
+        modelDesc: "【真实战绩确权闭环】在 BasedHardware/omi, aibtcdev 等顶级项目中落地 6 个 Merged PR、3 个 Approved PR，累计斩获 $650+ 美金等值 USDC 赏金！通过最小变更注入、单测全覆盖与无冲突变基，实现高通过率自动化赏金变现。",
         sop: [
-          { title: "赏金 Issue 全网轮询", desc: "GraphQL 自动化抓取高信誉度项目的未认领赏金工单。" },
-          { title: "代码库克隆与环境自愈", desc: "Agent 在隔离容器中自动构建项目并定位 Bug 对应源文件。" },
-          { title: "补丁生成与单测验证", desc: "编写修复代码并运行单元测试，确保 100% 通过测试用例。" },
-          { title: "提交 PR 并申领赏金", desc: "规范书写 PR 说明文档，被维护者合并后自动接收加密货币或美金打款。" }
+          { title: "Algora & GraphQL 全网轮询", desc: "抓取带 $50-$500 Bounty 的高信誉工单与 Algora API，提取未认领工单。" },
+          { title: "沙箱隔离定位与防御性编码", desc: "在虚拟环境自愈依赖，定位缺陷代码，生成最小安全防御，杜绝破坏性重构。" },
+          { title: "Hermetic 单测验证与代码格式化", desc: "严格遵循官方代码风格（如 Black），编写完备单测，确保 CI 100% 绿灯。" },
+          { title: "自动化提交与 Base 链上收银", desc: "PR 注入 EVM 收款钱包 (gewenbo.eth)，合并后即刻 Base 链上 USDC 秒级打款。" }
         ],
-        pitfalls: "严禁批量发送垃圾无意义 PR；必须确保代码质量完全符合开源项目的严苛贡献指南。"
+        pitfalls: "严禁批量发送垃圾无意义 PR；必须确保代码质量完全符合开源项目的严苛贡献指南并附带真实单元测试。"
       },
       {
         id: "producthunt-launcher",
@@ -2660,15 +2851,21 @@ if __name__ == "__main__":
     // -------------------------------------------------------------
     const manifestoModal = document.getElementById('manifesto-modal');
     const btnOpenManifesto = document.getElementById('btn-open-manifesto');
+    const btnOpenManifestoUbi = document.getElementById('btn-open-manifesto-ubi');
     const mCloseBtn = document.getElementById('m-close-btn');
     const mBtnStart = document.getElementById('m-btn-start');
     const btnJumpFleet = document.getElementById('btn-jump-fleet');
 
+    function openManifestoModal() {
+      drawerOverlay.classList.add('open');
+      manifestoModal.classList.add('open');
+    }
+
     if (btnOpenManifesto) {
-      btnOpenManifesto.addEventListener('click', () => {
-        drawerOverlay.classList.add('open');
-        manifestoModal.classList.add('open');
-      });
+      btnOpenManifesto.addEventListener('click', openManifestoModal);
+    }
+    if (btnOpenManifestoUbi) {
+      btnOpenManifestoUbi.addEventListener('click', openManifestoModal);
     }
 
     if (mCloseBtn) {
