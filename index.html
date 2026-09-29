@@ -1804,6 +1804,33 @@
     // -------------------------------------------------------------
     const RECIPES = [
       {
+        id: "bounty-hunter-fleet",
+        title: "硅基赏金猎人 · GitHub / Algora 开源悬赏收割机",
+        fleetRole: "开源生态与Bug赏金打金舰队",
+        category: "dev",
+        difficulty: "low-code",
+        currency: "usd",
+        cycle: "weekly",
+        badge: "flagship",
+        badgeText: "48小时$650实战",
+        icon: "⚔️",
+        desc: "打破'Vibe Coding 只耗Token不搞钱'魔咒：由自主 AI 智能体巡检 GitHub、Algora、Polar.sh 全球开源赏金工单。采用'手术刀式最小补丁'与'真实会失败的行为级单测'，严守原库代码风格（Black/Flake8），让 Maintainer 5 分钟内极速 Approve 并合并入主干。实战 48 小时 6 个 PR 100% 合并，斩获 $650 USDC！",
+        monthlyEst: "$2,500 - $12,000 / mo (¥18,000 - ¥86,000)",
+        minMonthlyUsd: 2500,
+        weeklyHours: 5,
+        hotScore: 99,
+        techStack: ["BountyEngine", "GitHub GraphQL", "Pytest", "Black 26.5.1", "Base USDC", "EVM 0% Fee"],
+        demoUrl: "https://psyverse.fun/pay",
+        modelDesc: "【零风险开源赏金确权闭环】智能体 7x24h 自动化监听各大头部开源仓库中的 paid issues 和 bounties。对 App PATCH 显式空值防护、模型反序列化容错、CLI 导出等小而准的 Bug，秒级复刻本地隔离单测，现场生成符合仓库贡献协议的最小补丁。PR 描述注入 Failure-Class 与测试证据，合并后由智能体自动跟进 EVM/Base 链上地址收款确权。",
+        sop: [
+          { title: "高置信度高单价赏金巡检", desc: "通过 GraphQL 与 REST 实时过滤 Algora / Polar / GitHub 上标价 $50 - $200 USDC 的已标注工单，排除模糊大需求，锁定确定性边界 Bug。" },
+          { title: "手术刀式最小补丁开发", desc: "杜绝自作聪明的大重构，核心改动控制在 5-15 行代码内，绝不破坏原有 Git blame 和公共 API 契约。" },
+          { title: "行为级复现与防御双重单测", desc: "编写两个关键测试：1. 复现未打补丁时的异常与数据投毒；2. 验证补丁生效且断言敏感信息无泄露。" },
+          { title: "链上结算与现实主权入账", desc: "PR 合并后自动在评论区声明 gewenbo.eth / 统一收款地址，直入个人硬件冷钱包或 Base 链，平台抽成 0%。" }
+        ],
+        pitfalls: "绝对禁止大面积重命名变量或无脑全量格式化；PR 描述必须严格声明所属 issue 与 Failure-Class，避免触发维护者垃圾邮件风控。"
+      },
+      {
         id: "languo-short-drama",
         title: "蓝果短剧 · 12 节点 GPU 原生短剧与出海切片工场",
         fleetRole: "AI 原生短剧算力造币机",
