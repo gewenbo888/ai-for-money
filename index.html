@@ -1831,6 +1831,33 @@
         pitfalls: "绝对禁止大面积重命名变量或无脑全量格式化；PR 描述必须严格声明所属 issue 与 Failure-Class，避免触发维护者垃圾邮件风控。"
       },
       {
+        id: "okx-ai-builder-agent",
+        title: "欧易 AI Builder · 全网交易 Agent 管道与 50% 手续费造币机",
+        fleetRole: "高频量化与交易所分润管道兵",
+        category: "web3",
+        difficulty: "low-code",
+        currency: "usd",
+        cycle: "daily",
+        badge: "flagship",
+        badgeText: "每小时USDT结算",
+        icon: "🦅",
+        desc: "打破传统交易所返佣'必须靠新用户注册'的铁律！接入 OKX AI Builder / Agent Trade Kit：无论是谁、新老用户，只要在你的 AI Agent、Claude MCP 插件、网格机器人或 Telegram 助手里做单，OKX 每小时自动把 35%~50% 的合格净手续费以 USDT 形式直接打入你的资金账户。自用降低 50% 交易磨损，开源白嫖全网量化交易流水！",
+        monthlyEst: "$3,000 - $25,000 / mo (¥21,000 - ¥180,000)",
+        minMonthlyUsd: 3000,
+        weeklyHours: 2,
+        hotScore: 99,
+        techStack: ["OKX V5 API", "Model Context Protocol (MCP)", "Spot Grid Bot", "USDT 每小时秒结", "Builder Tag 注入"],
+        demoUrl: "https://github.com/gewenbo888/okx-alpha-copilot",
+        modelDesc: "【双轮造血：自用降本 50% + 全网白嫖被动分润】基于 OKX 官方 V5 API 与 MCP 协议构建 AI 智能体交易节点。所有 API 下单请求强制植入专属 Builder Tag。一方面，自营网格套利机器人高频挂单吃基差，手续费自动拿回最高 50%；另一方面，通过开源 Claude/Cursor 插件与 Telegram 炒币机器人，全网交易员每完成一笔现货或合约交易，OKX 都会在后台毫秒级记录并将返佣每小时结算入账。",
+        sop: [
+          { title: "申请专属 Builder Code", desc: "前往 OKX AI Builder 申请页提交开箱即用的 Alpha Copilot 原型资料，1 个工作日下发专属 Tag 代码。" },
+          { title: "本地环境一键激活注入", desc: "克隆开源项目，在 .env 中填入你的 Builder Code，启动 MCP Server 或网格机器人。" },
+          { title: "公域技术矩阵精准分发", desc: "通过 Twitter (@TrustlessX) 及开发者社区分发一键配置脚本，吸引交易员将 MCP 插件挂入 Claude Desktop / Cursor。" },
+          { title: "全自动资金监控与对账", desc: "运行 npm run monitor，实时查看账户权益与每小时打入资金账户的 USDT 返佣流水。" }
+        ],
+        pitfalls: "必须确保每一次 place_order 请求均携带 tag 字段；自营网格交易需避开单边极端跳水行情，合理设置止损线。"
+      },
+      {
         id: "languo-short-drama",
         title: "蓝果短剧 · 12 节点 GPU 原生短剧与出海切片工场",
         fleetRole: "AI 原生短剧算力造币机",
