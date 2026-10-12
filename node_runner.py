@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 AI for Money · 硅基雇佣军轻量化节点运行时
 Silicon Fleet Lightweight Node Runtime & Cashflow Orchestrator
 支持一键在本地或廉价 VPS 上启动多智能体搞钱守护进程与收款控制台。
 """
 
-import os
-import sys
 import json
-import time
-import signal
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+import os
 from datetime import datetime
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 PORT = int(os.environ.get("PORT", 8888))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -25,18 +21,18 @@ RECIPES_STATUS = [
 ]
 
 def print_banner():
-    banner = """
+    banner = f"""
 ========================================================================
     ⚡ AI for Money · 80 亿人硅基普遍基本收入 (Silicon Sovereign UBI) ⚡
     Node Runtime Active | Psyverse Sovereign Individual Protocol
 ========================================================================
 [✓] 科学第一性原理 -> [✓] 工程确定性实现 -> [✓] 商业价值捕获 -> [✓] 80亿人普惠
     
-    🌐 本地控制台:  http://localhost:{port}
+    🌐 本地控制台:  http://localhost:{PORT}
     💳 结算收款通道: https://psyverse.fun/payment
     📖 现实主权白皮书: MANIFESTO_8_BILLION.md
 ========================================================================
-""".format(port=PORT)
+"""
     print(banner)
 
 class SovereignHandler(SimpleHTTPRequestHandler):
