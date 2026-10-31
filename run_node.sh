@@ -8,14 +8,14 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$DIR"
 
 echo "======================================================================"
-echo "  ⚡ AI for Money (Vibe Earning) · 80 亿人普惠节点部署器 ⚡"
+echo "  ⚡ AI for Money · 项目工作台启动器 ⚡"
 echo "======================================================================"
 echo "[+] 检查运行环境..."
 
 if command -v python3 >/dev/null 2>&1; then
     echo "[✓] 检测到 Python 3: $(python3 --version)"
     export PORT="${PORT:-8888}"
-    echo "[+] 启动硅基搞钱节点运行时 (Port: $PORT)..."
+    echo "[+] 启动项目工作台 (Port: $PORT)..."
     python3 node_runner.py
 elif command -v docker >/dev/null 2>&1; then
     echo "[✓] 检测到 Docker 环境，启动容器化节点..."

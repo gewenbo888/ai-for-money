@@ -1,0 +1,626 @@
+[
+  {
+    "id": "bounty-hunter-fleet",
+    "title": "开源问题修复",
+    "category": "tech",
+    "description": "修复真实缺陷，提供可复现的测试与清楚的 Pull Request。",
+    "deliverable": "代码补丁、测试与变更说明",
+    "tags": [
+      "Python",
+      "Git",
+      "测试"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "okx-ai-builder-agent",
+    "title": "交易工具接口研究",
+    "category": "other",
+    "description": "研究数据与接口，先做只读演示和费用测算。",
+    "deliverable": "只读接口演示与风险说明",
+    "tags": [
+      "API",
+      "数据",
+      "交易工具"
+    ],
+    "reference": "https://github.com/gewenbo888/okx-alpha-copilot",
+    "verification": "资料待验证",
+    "steps": [
+      "写明研究问题与待验证假设",
+      "整理带日期与来源的资料",
+      "制作演示、样品或可核对的分析",
+      "记录边界、成本与下一步验证"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "languo-short-drama",
+    "title": "蓝果短剧制作",
+    "category": "content",
+    "description": "从脚本、分镜到剪辑，探索原创科幻与幻想叙事。",
+    "deliverable": "分镜文稿与短片样稿",
+    "tags": [
+      "剧本",
+      "视频",
+      "配音"
+    ],
+    "reference": "https://bluefruit.psyverse.fun/",
+    "verification": "样片可预览",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "huoshan-arbitrage-fleet",
+    "title": "内容工作流与工具替代",
+    "category": "content",
+    "description": "比较开源与现有工具，整理可复用的内容制作流程。",
+    "deliverable": "工具比较表与制作流程",
+    "tags": [
+      "开源工具",
+      "视频",
+      "工作流"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "kimberly-visual-paragravity-fleet",
+    "title": "长视频研究与摘要",
+    "category": "content",
+    "description": "从有权使用的长视频里整理观点、时间戳与引用。",
+    "deliverable": "带时间戳的摘要与资料索引",
+    "tags": [
+      "视频",
+      "研究",
+      "摘要"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "gumroad-xianyu-vending",
+    "title": "数字工具产品分发",
+    "category": "digital",
+    "description": "准备一份可使用的数字产品，检查介绍、文件与交付。",
+    "deliverable": "产品包、使用说明与试用反馈",
+    "tags": [
+      "数字产品",
+      "工具",
+      "交付"
+    ],
+    "reference": "https://gewenbo.gumroad.com/",
+    "verification": "资料待验证",
+    "steps": [
+      "明确买家或读者与使用场景",
+      "完成一份可直接使用的产品样稿",
+      "核对来源、使用说明与交付方式",
+      "邀请试用并记录反馈，再决定下一步"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "vending-sovereignty",
+    "title": "数字产品交付流程",
+    "category": "digital",
+    "description": "梳理订单、付款确认与文件交付之间的真实流程。",
+    "deliverable": "订单流程与交付验收清单",
+    "tags": [
+      "订单",
+      "产品",
+      "交付"
+    ],
+    "reference": "https://psyverse.fun/pay",
+    "verification": "资料待验证",
+    "steps": [
+      "明确买家或读者与使用场景",
+      "完成一份可直接使用的产品样稿",
+      "核对来源、使用说明与交付方式",
+      "邀请试用并记录反馈，再决定下一步"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "shorts-factory",
+    "title": "原创科普视频制作",
+    "category": "content",
+    "description": "将一个科学问题写成有来源、有叙事的原创短视频。",
+    "deliverable": "脚本、来源清单与视频样稿",
+    "tags": [
+      "科普",
+      "视频",
+      "字幕"
+    ],
+    "reference": "https://bluefruit.psyverse.fun/",
+    "verification": "资料待验证",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "seo-syndication",
+    "title": "长文编辑与分发",
+    "category": "content",
+    "description": "围绕具体问题写一篇有原创价值、适合阅读的文章。",
+    "deliverable": "文章成稿与发布清单",
+    "tags": [
+      "写作",
+      "搜索",
+      "编辑"
+    ],
+    "reference": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "verification": "资料待验证",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "lead-responder",
+    "title": "客户需求整理",
+    "category": "tech",
+    "description": "整理公开需求或已授权的客户反馈，识别可交付任务。",
+    "deliverable": "需求清单与响应草稿",
+    "tags": [
+      "需求",
+      "研究",
+      "沟通"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "micro-saas",
+    "title": "小型 SaaS 需求验证",
+    "category": "tech",
+    "description": "从一个具体痛点出发，制作可以让用户操作的原型。",
+    "deliverable": "可操作原型与需求验证记录",
+    "tags": [
+      "前端",
+      "产品",
+      "SaaS"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "newsletter-intel",
+    "title": "专题研究简报",
+    "category": "digital",
+    "description": "围绕明确读者持续整理有来源、可追溯的专题信息。",
+    "deliverable": "一期完整简报与资料目录",
+    "tags": [
+      "研究",
+      "写作",
+      "简报"
+    ],
+    "reference": "https://psyverse.fun/atlas",
+    "verification": "资料待验证",
+    "steps": [
+      "明确买家或读者与使用场景",
+      "完成一份可直接使用的产品样稿",
+      "核对来源、使用说明与交付方式",
+      "邀请试用并记录反馈，再决定下一步"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "ecommerce-scout",
+    "title": "电商评价研究",
+    "category": "other",
+    "description": "分析有权使用的评价资料，整理需求与产品改进方向。",
+    "deliverable": "评价分类与需求研究报告",
+    "tags": [
+      "电商",
+      "数据",
+      "研究"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "写明研究问题与待验证假设",
+      "整理带日期与来源的资料",
+      "制作演示、样品或可核对的分析",
+      "记录边界、成本与下一步验证"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "web3-arb",
+    "title": "链上数据与费用研究",
+    "category": "other",
+    "description": "记录链上公开数据、网络费用与风险，先验证分析方法。",
+    "deliverable": "公开数据看板与费用研究",
+    "tags": [
+      "Web3",
+      "数据",
+      "费用"
+    ],
+    "reference": "https://ethereum.org/en/developers/",
+    "verification": "资料待验证",
+    "steps": [
+      "写明研究问题与待验证假设",
+      "整理带日期与来源的资料",
+      "制作演示、样品或可核对的分析",
+      "记录边界、成本与下一步验证"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "kdp-publishing",
+    "title": "原创电子书制作",
+    "category": "digital",
+    "description": "把原创内容整理成可阅读、排版完整的电子书。",
+    "deliverable": "电子书、目录与来源说明",
+    "tags": [
+      "写作",
+      "排版",
+      "电子书"
+    ],
+    "reference": "https://kdp.amazon.com/",
+    "verification": "资料待验证",
+    "steps": [
+      "明确买家或读者与使用场景",
+      "完成一份可直接使用的产品样稿",
+      "核对来源、使用说明与交付方式",
+      "邀请试用并记录反馈，再决定下一步"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "infographic-generator",
+    "title": "科普信息图制作",
+    "category": "content",
+    "description": "用准确的文字和图形解释一个有边界的科学问题。",
+    "deliverable": "原创信息图与参考资料",
+    "tags": [
+      "设计",
+      "科普",
+      "信息图"
+    ],
+    "reference": "https://psyverse.fun/",
+    "verification": "资料待验证",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "bounty-hunter",
+    "title": "开源悬赏需求筛选",
+    "category": "tech",
+    "description": "筛选边界明确、验收条件清楚的公开技术任务。",
+    "deliverable": "任务候选表与可行性评估",
+    "tags": [
+      "GitHub",
+      "需求",
+      "测试"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "producthunt-launcher",
+    "title": "产品发布准备",
+    "category": "other",
+    "description": "准备能让目标用户理解和试用产品的发布资料。",
+    "deliverable": "演示、介绍页与反馈问题清单",
+    "tags": [
+      "产品",
+      "发布",
+      "反馈"
+    ],
+    "reference": "https://www.producthunt.com/",
+    "verification": "资料待验证",
+    "steps": [
+      "写明研究问题与待验证假设",
+      "整理带日期与来源的资料",
+      "制作演示、样品或可核对的分析",
+      "记录边界、成本与下一步验证"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "podcast-cloner",
+    "title": "播客摘要与字幕",
+    "category": "content",
+    "description": "处理原创或获授权的音频，制作摘要、字幕与片段。",
+    "deliverable": "音频摘要、字幕与引用时间戳",
+    "tags": [
+      "音频",
+      "字幕",
+      "摘要"
+    ],
+    "reference": "https://github.com/openai/whisper",
+    "verification": "资料待验证",
+    "steps": [
+      "明确受众、用途与叙事目标",
+      "完成脚本、来源与可阅读分镜",
+      "制作一份可播放或阅读的样稿",
+      "检查内容、字幕与声音，记录反馈"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "deep-research-service",
+    "title": "B2B 行业研究",
+    "category": "tech",
+    "description": "围绕客户的一个具体决策，整理证据、比较与结论。",
+    "deliverable": "带来源的行业研究简报",
+    "tags": [
+      "研究",
+      "数据",
+      "交付"
+    ],
+    "reference": "https://psyverse.fun/atlas",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "global-seo-fleet",
+    "title": "多语言网站本地化",
+    "category": "tech",
+    "description": "围绕真实用户改进语言、内容与页面访问体验。",
+    "deliverable": "本地化页面与语言检查记录",
+    "tags": [
+      "网站",
+      "语言",
+      "搜索"
+    ],
+    "reference": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "game-asset-vending",
+    "title": "游戏素材制作",
+    "category": "digital",
+    "description": "制作风格统一、规格明确的原创或获授权游戏素材。",
+    "deliverable": "素材包、格式规范与使用说明",
+    "tags": [
+      "游戏",
+      "设计",
+      "素材"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确买家或读者与使用场景",
+      "完成一份可直接使用的产品样稿",
+      "核对来源、使用说明与交付方式",
+      "邀请试用并记录反馈，再决定下一步"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "community-concierge",
+    "title": "社群知识库与问答",
+    "category": "tech",
+    "description": "整理获授权资料，帮助成员找到有来源的回答。",
+    "deliverable": "知识库原型与问答测试集",
+    "tags": [
+      "知识库",
+      "检索",
+      "社群"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "明确使用者、任务边界与验收方式",
+      "完成一个最小可用交付物",
+      "检查正常输入、失败情况与复现步骤",
+      "收集试用反馈，记录实际投入与结果"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  },
+  {
+    "id": "pod-merch-fleet",
+    "title": "按需印刷项目验证",
+    "category": "other",
+    "description": "从设计、样品与供应商信息出发核对交付与费用。",
+    "deliverable": "样品验收表与成本记录",
+    "tags": [
+      "设计",
+      "供应链",
+      "验证"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "资料待验证",
+    "steps": [
+      "写明研究问题与待验证假设",
+      "整理带日期与来源的资料",
+      "制作演示、样品或可核对的分析",
+      "记录边界、成本与下一步验证"
+    ],
+    "checks": [
+      "已明确任务和验收标准",
+      "已完成交付物并自查",
+      "已记录目标用户反馈",
+      "已记录成本与结果"
+    ]
+  }
+]

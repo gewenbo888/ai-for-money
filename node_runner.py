@@ -1,76 +1,64 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-AI for Money · 硅基雇佣军轻量化节点运行时
-Silicon Fleet Lightweight Node Runtime & Cashflow Orchestrator
-支持一键在本地或廉价 VPS 上启动多智能体搞钱守护进程与收款控制台。
-"""
-
-import os
-import sys
+"""Serve the AI for Money project workbench; no earning workers are started."""
 import json
-import time
-import signal
+import os
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from datetime import datetime
+from pathlib import Path
+from urllib.parse import unquote, urlparse
 
-PORT = int(os.environ.get("PORT", 8888))
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = Path(__file__).resolve().parent
+PORT = int(os.environ.get('PORT', '8888'))
+HOST = os.environ.get('HOST', '127.0.0.1')
 
-RECIPES_STATUS = [
-    {"id": "bounty-hunter", "name": "硅基赏金猎人 (GitHub/Polar.sh)", "status": "READY", "target": "USDC/USD"},
-    {"id": "digital-vending", "name": "0% 抽成自动化数字自贩机", "status": "ACTIVE", "target": "WeChat/Alipay/EVM"},
-    {"id": "bluefruit-gpu", "name": "蓝果短剧 12 节点 GPU 编排", "status": "DISPATCHED", "target": "Content Revenue"},
-    {"id": "long-tail-funnel", "name": "公域长尾流量收银钩子注射器", "status": "LISTENING", "target": "Traffic Leads"},
-]
 
-def print_banner():
-    banner = """
-========================================================================
-    ⚡ AI for Money · 80 亿人硅基普遍基本收入 (Silicon Sovereign UBI) ⚡
-    Node Runtime Active | Psyverse Sovereign Individual Protocol
-========================================================================
-[✓] 科学第一性原理 -> [✓] 工程确定性实现 -> [✓] 商业价值捕获 -> [✓] 80亿人普惠
-    
-    🌐 本地控制台:  http://localhost:{port}
-    💳 结算收款通道: https://psyverse.fun/payment
-    📖 现实主权白皮书: MANIFESTO_8_BILLION.md
-========================================================================
-""".format(port=PORT)
-    print(banner)
-
-class SovereignHandler(SimpleHTTPRequestHandler):
+class WorkbenchHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "/api/status":
+        path = unquote(urlparse(self.path).path)
+        if any(part.startswith('.') for part in path.split('/') if part):
+            self.send_error(403)
+            return
+        if path == '/api/status':
+            try:
+                projects = json.loads((BASE_DIR / 'recipes.json').read_text())
+                payload = {
+                    'system': 'AI for Money project workbench',
+                    'version': '2.0.0',
+                    'status': 'serving',
+                    'mode': 'research-and-local-records',
+                    'project_count': len(projects),
+                    'workers_started': 0,
+                    'payment_verification': False,
+                }
+                body = json.dumps(payload, ensure_ascii=False).encode('utf-8')
+            except (OSError, ValueError):
+                self.send_error(503, 'Project data unavailable')
+                return
             self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.send_header('Content-Length', str(len(body)))
+            self.send_header('Cache-Control', 'no-store')
             self.end_headers()
-            payload = {
-                "system": "AI for Money - Sovereign Fleet Node",
-                "version": "1.0.0",
-                "timestamp": datetime.utcnow().isoformat() + "Z",
-                "status": "HEALTHY",
-                "recipes": RECIPES_STATUS,
-                "manifesto": "https://github.com/gewenbo888/ai-for-money/blob/main/MANIFESTO_8_BILLION.md",
-                "official_payment": "https://psyverse.fun/payment",
-                "ens": "gewenbo.eth"
-            }
-            self.wfile.write(json.dumps(payload, ensure_ascii=False, indent=2).encode('utf-8'))
+            self.wfile.write(body)
             return
         return super().do_GET()
 
-def main():
-    print_banner()
-    os.chdir(BASE_DIR)
-    server_address = ('', PORT)
-    httpd = HTTPServer(server_address, SovereignHandler)
-    print(f"[*] 硅基搞钱节点已在端口 {PORT} 启动监听 (按 Ctrl+C 退出)...")
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        print("\n[*] 硅基搞钱节点优雅关闭。")
-        httpd.server_close()
+    def list_directory(self, path):
+        self.send_error(403, 'Directory listing is disabled')
+        return None
 
-if __name__ == "__main__":
+
+def main():
+    os.chdir(BASE_DIR)
+    print(f'AI for Money project workbench: http://{HOST}:{PORT}', flush=True)
+    print('Serves the project library, local experiment records and cost calculator. No earning or trading workers are started.', flush=True)
+    server = HTTPServer((HOST, PORT), WorkbenchHandler)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.server_close()
+
+
+if __name__ == '__main__':
     main()
