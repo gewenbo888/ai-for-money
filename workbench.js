@@ -6,7 +6,9 @@
  const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const labels = {tech:'技术交付',digital:'数字产品',content:'内容制作',other:'其他探索'};
  const key = 'afm-experiments-v2';
- let projects = [], state = {}, filter = 'all', limit = 6, toastTimer, activeProject;
+ let projects = [], state = {}, direction = 'all', limit = 6, toastTimer, activeProject;
+ const filters = {type:'all',difficulty:'all',currency:'all',model:'all'};
+ const facets = {"type": {"label": "项目类型", "values": {"all": "全部", "dev": "开发与悬赏", "vending": "数字产品与知识服务", "content": "内容创作", "saas": "SaaS 与网站", "ecommerce": "电商与选品", "web3": "Web3 与数据", "traffic": "获客与社群", "consulting": "企业服务与咨询"}}, "difficulty": {"label": "入门门槛", "values": {"all": "全部", "no-code": "零代码入门", "low-code": "轻量代码与自动化", "hardcore": "需要开发基础"}}, "currency": {"label": "参考币种", "values": {"all": "全部", "cny": "人民币 CNY", "usd": "美元 USD", "crypto": "加密资产"}}, "model": {"label": "合作方式", "values": {"all": "全部", "once": "单次交付", "product": "产品销售", "subscription": "订阅与维护", "research": "研究与验证"}}};
  function toast(text) { clearTimeout(toastTimer); $('#toast').textContent=text; $('#toast').hidden=false; toastTimer=setTimeout(()=>{$('#toast').hidden=true;},3200); }
  function save() { try { localStorage.setItem(key,JSON.stringify(state)); } catch { toast('浏览器无法保存，请下载记录备份。本次操作仍然有效。'); } }
  function download(text,name) { const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'})); const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000); }
@@ -27,16 +29,26 @@
  }
  function render() {
   const q=$('#search').value.trim().toLocaleLowerCase();
-  const filtered=projects.filter(p=>(filter==='all'||p.category===filter)&&[p.title,p.description,p.deliverable,...p.tags,...[p.title,p.description,p.deliverable,...p.tags].map(T)].join(' ').toLocaleLowerCase().includes(q));
+  const filtered=projects.filter(p=>(direction==='all'||p.category===direction)&&Object.entries(filters).every(([key,value])=>value==='all'||(key==='currency'?p.currencies.includes(value):p[key]===value))&&[p.title,p.description,p.deliverable,...p.tags,...p.searchTags,...[p.title,p.description,p.deliverable,...p.tags].map(T)].join(' ').toLocaleLowerCase().includes(q));
+  const sort=$('#project-sort').value;
+  if(sort==='difficulty'){const rank={'no-code':0,'low-code':1,'hardcore':2};filtered.sort((a,b)=>rank[a.difficulty]-rank[b.difficulty]);}
+  if(sort==='name')filtered.sort((a,b)=>T(a.title).localeCompare(T(b.title),window.SiteLanguage.language==='en'?'en':'zh-CN'));
+  document.querySelectorAll('[data-dimension]').forEach(b=>b.setAttribute('aria-pressed',String(filters[b.dataset.dimension]===b.dataset.value)));
+  const selected=Object.entries(filters).filter(([,v])=>v!=='all');
+  $('#active-filters').innerHTML=(direction!=='all'?`<button type="button" class="filter-chip" data-clear="direction"><span>${esc(labels[direction])}</span><span aria-hidden="true">×</span></button>`:'')+selected.map(([k,v])=>`<button type="button" class="filter-chip" data-clear="${k}"><span>${esc(facets[k].label)}</span><span>:</span><span>${esc(facets[k].values[v])}</span><span aria-hidden="true">×</span></button>`).join('');
+  $('#active-filters').hidden=selected.length===0&&direction==='all';
+  $('#reset-all-filters').disabled=!selected.length&&direction==='all'&&!q&&sort==='default';
   $('#result-count').textContent=`共 ${filtered.length} 个项目`;
-  $('#project-list').innerHTML=filtered.slice(0,limit).map(p=>`<article class="project-row"><div class="project-copy"><h3><button type="button" class="project-title" data-detail="${p.id}">${esc(p.title)}</button></h3><p>${esc(p.description)}</p><div class="project-meta"><div><span>交付物</span><strong>${esc(p.deliverable)}</strong></div><div><span>验证状态</span><strong class="verification">${esc(p.verification)}</strong></div><div><span>参考资料</span><a href="${esc(p.reference)}" target="_blank" rel="noopener">查看资料 ↗</a></div></div></div><button type="button" class="button primary project-start" data-start-project="${p.id}">${state[p.id]?.active?'查看实验':'开始实验'}</button></article>`).join('')||'<div class="empty"><h3>没有找到匹配项目</h3><p>换一个关键词，或重置筛选。</p><button type="button" class="button" id="reset-filters">重置筛选</button></div>';
+  $('#project-list').innerHTML=filtered.slice(0,limit).map(p=>`<article class="project-row"><div class="project-copy"><h3><button type="button" class="project-title" data-detail="${p.id}">${esc(p.title)}</button></h3><p>${esc(p.description)}</p><div class="project-tags"><span>${esc(facets.type.values[p.type])}</span><span>${esc(facets.difficulty.values[p.difficulty])}</span><span>${esc(facets.model.values[p.model])}</span></div><div class="project-meta"><div><span>交付物</span><strong>${esc(p.deliverable)}</strong></div><div><span>验证状态</span><strong class="verification">${esc(p.verification)}</strong></div><div><span>参考资料</span><a href="${esc(p.reference)}" target="_blank" rel="noopener">查看资料 ↗</a></div></div></div><button type="button" class="button primary project-start" data-start-project="${p.id}">${state[p.id]?.active?'查看实验':'开始实验'}</button></article>`).join('')||'<div class="empty"><h3>没有找到匹配项目</h3><p>换一个关键词，或重置筛选。</p><button type="button" class="button" id="reset-filters">重置筛选</button></div>';
   let more=$('#load-more');
   if(!more){more=document.createElement('button');more.id='load-more';more.type='button';more.className='button load-more';$('#project-list').after(more);more.addEventListener('click',()=>{limit+=6;render();});}
   more.hidden=filtered.length<=limit;more.textContent=`显示更多项目（还有 ${Math.max(0,filtered.length-limit)} 个）`;
  }
+ function resetFilters() {
+  direction='all';Object.keys(filters).forEach(k=>filters[k]='all');$('#search').value='';$('#project-sort').value='default';limit=6;render();
+ }
  function setFilter(next,scroll=false) {
-  filter=next;limit=6;
-  document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===filter)));
+  direction=next;Object.keys(filters).forEach(k=>filters[k]='all');limit=6;
   render();if(scroll)$('#library').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
  }
  function projectPlan(p) { return `# ${T(p.title)}
@@ -84,9 +96,12 @@ ${T('请根据自己的实际投入和结果记录；计划不代表执行或收
  });
  $('#project-list').addEventListener('click',e=>{
   const detail=e.target.closest('[data-detail],[data-start-project]');if(detail)openProject(detail.dataset.detail||detail.dataset.startProject);
-  if(e.target.closest('#reset-filters')){$('#search').value='';setFilter('all');}
+  if(e.target.closest('#reset-filters'))resetFilters();
  });
- document.querySelector('.filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(b)setFilter(b.dataset.filter);});
+ document.querySelector('.filter-matrix').addEventListener('click',e=>{const b=e.target.closest('[data-dimension]');if(!b||!Object.hasOwn(filters,b.dataset.dimension))return;filters[b.dataset.dimension]=b.dataset.value;if(b.dataset.dimension==='type')direction='all';limit=6;render();});
+ $('#active-filters').addEventListener('click',e=>{const b=e.target.closest('[data-clear]');if(!b)return;if(b.dataset.clear==='direction')direction='all';else filters[b.dataset.clear]='all';limit=6;render();});
+ $('#reset-all-filters').addEventListener('click',resetFilters);
+ $('#project-sort').addEventListener('change',()=>{limit=6;render();});
  document.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',()=>{$('#search').value='';setFilter(b.dataset.start,true);}));
  $('#search').addEventListener('input',()=>{limit=6;render();});
  $('#experiment-list').addEventListener('change',e=>{

@@ -23,6 +23,19 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "dev",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "BountyEngine",
+      "GitHub GraphQL",
+      "Pytest",
+      "Black 26.5.1",
+      "Base USDC"
     ]
   },
   {
@@ -49,6 +62,19 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "web3",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "research",
+    "searchTags": [
+      "OKX V5 API",
+      "Model Context Protocol (MCP)",
+      "Spot Grid Bot",
+      "USDT 每小时秒结",
+      "Builder Tag 注入"
     ]
   },
   {
@@ -75,6 +101,20 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "12-GPU Cluster",
+      "Kling/Flux",
+      "Voicebox",
+      "Whisper",
+      "FFmpeg",
+      "Web3 EVM"
     ]
   },
   {
@@ -101,6 +141,20 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Cobalt API",
+      "Flux/SD",
+      "Voicebox",
+      "Xianyu Auto",
+      "TikTok",
+      "Gumroad"
     ]
   },
   {
@@ -127,6 +181,20 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Gemini Flash Vision",
+      "Antigravity",
+      "ParaGravity",
+      "FFmpeg Scene Detect",
+      "NotebookLM Plus",
+      "Skills Framework"
     ]
   },
   {
@@ -153,6 +221,21 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "vending",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd",
+      "cny"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Gumroad",
+      "PayPal",
+      "Xianyu",
+      "Python RAG",
+      "MCP Protocol",
+      "Whisper"
     ]
   },
   {
@@ -179,6 +262,19 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "vending",
+    "difficulty": "low-code",
+    "currencies": [
+      "crypto"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Python",
+      "Web3 EVM",
+      "HMAC-SHA256",
+      "Obsidian",
+      "WeChat Pay"
     ]
   },
   {
@@ -205,6 +301,19 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "FFmpeg",
+      "Edge-TTS",
+      "Puppeteer CDP 9223",
+      "Gemini ImageGen",
+      "中视频伙伴计划"
     ]
   },
   {
@@ -231,6 +340,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Nostr BIP-340",
+      "REST APIs",
+      "Markdown",
+      "AT Protocol"
     ]
   },
   {
@@ -257,6 +378,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "traffic",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Node.js",
+      "Chrome CDP",
+      "LLM Embedding",
+      "WeChat API"
     ]
   },
   {
@@ -283,6 +416,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "saas",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "subscription",
+    "searchTags": [
+      "Next.js",
+      "Stripe",
+      "Supabase",
+      "Vercel"
     ]
   },
   {
@@ -309,6 +454,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "vending",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "subscription",
+    "searchTags": [
+      "Substack",
+      "Deep Research",
+      "Obsidian",
+      "Stripe"
     ]
   },
   {
@@ -335,6 +492,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "ecommerce",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "research",
+    "searchTags": [
+      "Python Scraper",
+      "Shopify API",
+      "Claude 3.5",
+      "TikTok Ads"
     ]
   },
   {
@@ -361,6 +530,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "web3",
+    "difficulty": "hardcore",
+    "currencies": [
+      "crypto"
+    ],
+    "model": "research",
+    "searchTags": [
+      "Solidity",
+      "Ethers.js",
+      "Foundry",
+      "Telegram Bot"
     ]
   },
   {
@@ -387,6 +568,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "vending",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Pandoc",
+      "Calibre",
+      "Midjourney",
+      "Amazon KDP"
     ]
   },
   {
@@ -413,6 +606,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "no-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Puppeteer",
+      "HTML Canvas",
+      "SVG",
+      "Xiaohongshu API"
     ]
   },
   {
@@ -439,6 +644,20 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "dev",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Algora API",
+      "GitHub GraphQL",
+      "Base EVM",
+      "Pytest",
+      "Claude 3.7",
+      "Hermetic Gates"
     ]
   },
   {
@@ -465,6 +684,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "traffic",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Twitter API",
+      "Product Hunt API",
+      "Canva API",
+      "Discord"
     ]
   },
   {
@@ -491,6 +722,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "OpenAI Whisper",
+      "FFmpeg",
+      "Bilingual Subtitles",
+      "Python"
     ]
   },
   {
@@ -517,6 +760,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "consulting",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Perplexity API",
+      "Deep Research",
+      "Pandoc",
+      "Typst"
     ]
   },
   {
@@ -543,6 +798,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "saas",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Next.js i18n",
+      "DeepL API",
+      "Sitemap Generator",
+      "Cloudflare"
     ]
   },
   {
@@ -569,6 +836,17 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "vending",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Stable Diffusion",
+      "Blender Python API",
+      "Texture Synthesis"
     ]
   },
   {
@@ -595,6 +873,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "traffic",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "subscription",
+    "searchTags": [
+      "WeChat Bot",
+      "RAG Vector DB",
+      "FastAPI",
+      "Milvus"
     ]
   },
   {
@@ -621,6 +911,18 @@
       "已完成交付物并自查",
       "已记录目标用户反馈",
       "已记录成本与结果"
+    ],
+    "type": "ecommerce",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Printify API",
+      "Etsy API",
+      "Midjourney",
+      "Vectorize"
     ]
   }
 ]
