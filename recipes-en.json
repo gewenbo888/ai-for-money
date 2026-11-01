@@ -1,0 +1,928 @@
+[
+  {
+    "id": "bounty-hunter-fleet",
+    "title": "Open-source issue fixes",
+    "category": "tech",
+    "description": "Fix a real defect with reproducible tests and a clear pull request.",
+    "deliverable": "Code patch, tests and change notes",
+    "tags": [
+      "Python",
+      "Git",
+      "Testing"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "dev",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "BountyEngine",
+      "GitHub GraphQL",
+      "Pytest",
+      "Black 26.5.1",
+      "Base USDC"
+    ]
+  },
+  {
+    "id": "okx-ai-builder-agent",
+    "title": "Trading API research",
+    "category": "other",
+    "description": "Study data and APIs through a read-only demo and a cost analysis.",
+    "deliverable": "Read-only API demo and risk notes",
+    "tags": [
+      "API",
+      "Data",
+      "Trading tools"
+    ],
+    "reference": "https://github.com/gewenbo888/okx-alpha-copilot",
+    "verification": "Not yet verified",
+    "steps": [
+      "State the research question and testable hypotheses",
+      "Organize dated information with sources",
+      "Create a demo, sample or verifiable analysis",
+      "Record limitations, costs and the next validation step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "web3",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "research",
+    "searchTags": [
+      "OKX V5 API",
+      "Model Context Protocol (MCP)",
+      "Spot Grid Bot",
+      "USDT 每小时秒结",
+      "Builder Tag 注入"
+    ]
+  },
+  {
+    "id": "languo-short-drama",
+    "title": "BlueFruit short-film production",
+    "category": "content",
+    "description": "Explore original science fiction and fantasy, from script and storyboard to editing.",
+    "deliverable": "Storyboard script and short-film draft",
+    "tags": [
+      "Scripts",
+      "Video",
+      "Voice-over"
+    ],
+    "reference": "https://bluefruit.psyverse.fun/",
+    "verification": "Sample available",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "12-GPU Cluster",
+      "Kling/Flux",
+      "Voicebox",
+      "Whisper",
+      "FFmpeg",
+      "Web3 EVM"
+    ]
+  },
+  {
+    "id": "huoshan-arbitrage-fleet",
+    "title": "Content workflows and tool alternatives",
+    "category": "content",
+    "description": "Compare open-source and existing tools to build a reusable production workflow.",
+    "deliverable": "Tool comparison and production workflow",
+    "tags": [
+      "Open-source tools",
+      "Video",
+      "Workflows"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Cobalt API",
+      "Flux/SD",
+      "Voicebox",
+      "Xianyu Auto",
+      "TikTok",
+      "Gumroad"
+    ]
+  },
+  {
+    "id": "kimberly-visual-paragravity-fleet",
+    "title": "Long-form video research",
+    "category": "content",
+    "description": "Extract ideas, timestamps and citations from videos you have permission to use.",
+    "deliverable": "Timestamped summary and reference index",
+    "tags": [
+      "Video",
+      "Research",
+      "Summaries"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Gemini Flash Vision",
+      "Antigravity",
+      "ParaGravity",
+      "FFmpeg Scene Detect",
+      "NotebookLM Plus",
+      "Skills Framework"
+    ]
+  },
+  {
+    "id": "gumroad-xianyu-vending",
+    "title": "Digital product distribution",
+    "category": "digital",
+    "description": "Prepare a working digital product and check its description, files and delivery.",
+    "deliverable": "Product package, instructions and trial feedback",
+    "tags": [
+      "Digital products",
+      "Tools",
+      "Delivery"
+    ],
+    "reference": "https://gewenbo.gumroad.com/",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the buyer or reader and their use case",
+      "Create a usable product draft",
+      "Check sources, instructions and delivery method",
+      "Invite a trial, record feedback and decide the next step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "vending",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd",
+      "cny"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Gumroad",
+      "PayPal",
+      "Xianyu",
+      "Python RAG",
+      "MCP Protocol",
+      "Whisper"
+    ]
+  },
+  {
+    "id": "vending-sovereignty",
+    "title": "Digital product delivery",
+    "category": "digital",
+    "description": "Map the real path from order and payment confirmation to file delivery.",
+    "deliverable": "Order workflow and delivery checklist",
+    "tags": [
+      "Orders",
+      "Product",
+      "Delivery"
+    ],
+    "reference": "https://psyverse.fun/pay",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the buyer or reader and their use case",
+      "Create a usable product draft",
+      "Check sources, instructions and delivery method",
+      "Invite a trial, record feedback and decide the next step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "vending",
+    "difficulty": "low-code",
+    "currencies": [
+      "crypto"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Python",
+      "Web3 EVM",
+      "HMAC-SHA256",
+      "Obsidian",
+      "WeChat Pay"
+    ]
+  },
+  {
+    "id": "shorts-factory",
+    "title": "Original science videos",
+    "category": "content",
+    "description": "Turn a scientific question into an original short video with a narrative and sources.",
+    "deliverable": "Script, source list and video draft",
+    "tags": [
+      "Science",
+      "Video",
+      "Captions"
+    ],
+    "reference": "https://bluefruit.psyverse.fun/",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "FFmpeg",
+      "Edge-TTS",
+      "Puppeteer CDP 9223",
+      "Gemini ImageGen",
+      "中视频伙伴计划"
+    ]
+  },
+  {
+    "id": "seo-syndication",
+    "title": "Long-form writing and publishing",
+    "category": "content",
+    "description": "Write a useful original article around a specific question.",
+    "deliverable": "Finished article and publishing checklist",
+    "tags": [
+      "Writing",
+      "Search",
+      "Editing"
+    ],
+    "reference": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Nostr BIP-340",
+      "REST APIs",
+      "Markdown",
+      "AT Protocol"
+    ]
+  },
+  {
+    "id": "lead-responder",
+    "title": "Customer requirements research",
+    "category": "tech",
+    "description": "Organize public requests or authorized feedback into clear, deliverable tasks.",
+    "deliverable": "Requirements list and response drafts",
+    "tags": [
+      "Requirements",
+      "Research",
+      "Communication"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "traffic",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Node.js",
+      "Chrome CDP",
+      "LLM Embedding",
+      "WeChat API"
+    ]
+  },
+  {
+    "id": "micro-saas",
+    "title": "Micro-SaaS validation",
+    "category": "tech",
+    "description": "Start with one specific problem and build a prototype people can use.",
+    "deliverable": "Interactive prototype and validation notes",
+    "tags": [
+      "Frontend",
+      "Product",
+      "SaaS"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "saas",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "subscription",
+    "searchTags": [
+      "Next.js",
+      "Stripe",
+      "Supabase",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "newsletter-intel",
+    "title": "Research newsletters",
+    "category": "digital",
+    "description": "Curate traceable, sourced information for a clearly defined readership.",
+    "deliverable": "One complete newsletter and source directory",
+    "tags": [
+      "Research",
+      "Writing",
+      "Newsletters"
+    ],
+    "reference": "https://psyverse.fun/atlas",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the buyer or reader and their use case",
+      "Create a usable product draft",
+      "Check sources, instructions and delivery method",
+      "Invite a trial, record feedback and decide the next step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "vending",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "subscription",
+    "searchTags": [
+      "Substack",
+      "Deep Research",
+      "Obsidian",
+      "Stripe"
+    ]
+  },
+  {
+    "id": "ecommerce-scout",
+    "title": "E-commerce review research",
+    "category": "other",
+    "description": "Analyze reviews you have permission to use and identify product improvements.",
+    "deliverable": "Review taxonomy and requirements report",
+    "tags": [
+      "E-commerce",
+      "Data",
+      "Research"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "State the research question and testable hypotheses",
+      "Organize dated information with sources",
+      "Create a demo, sample or verifiable analysis",
+      "Record limitations, costs and the next validation step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "ecommerce",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "research",
+    "searchTags": [
+      "Python Scraper",
+      "Shopify API",
+      "Claude 3.5",
+      "TikTok Ads"
+    ]
+  },
+  {
+    "id": "web3-arb",
+    "title": "On-chain data and fee research",
+    "category": "other",
+    "description": "Record public blockchain data, network costs and risks to test an analysis method.",
+    "deliverable": "Public-data dashboard and fee study",
+    "tags": [
+      "Web3",
+      "Data",
+      "Costs"
+    ],
+    "reference": "https://ethereum.org/en/developers/",
+    "verification": "Not yet verified",
+    "steps": [
+      "State the research question and testable hypotheses",
+      "Organize dated information with sources",
+      "Create a demo, sample or verifiable analysis",
+      "Record limitations, costs and the next validation step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "web3",
+    "difficulty": "hardcore",
+    "currencies": [
+      "crypto"
+    ],
+    "model": "research",
+    "searchTags": [
+      "Solidity",
+      "Ethers.js",
+      "Foundry",
+      "Telegram Bot"
+    ]
+  },
+  {
+    "id": "kdp-publishing",
+    "title": "Original e-book production",
+    "category": "digital",
+    "description": "Turn original content into a readable, fully typeset e-book.",
+    "deliverable": "E-book, contents and source notes",
+    "tags": [
+      "Writing",
+      "Typesetting",
+      "E-books"
+    ],
+    "reference": "https://kdp.amazon.com/",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the buyer or reader and their use case",
+      "Create a usable product draft",
+      "Check sources, instructions and delivery method",
+      "Invite a trial, record feedback and decide the next step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "vending",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Pandoc",
+      "Calibre",
+      "Midjourney",
+      "Amazon KDP"
+    ]
+  },
+  {
+    "id": "infographic-generator",
+    "title": "Science infographics",
+    "category": "content",
+    "description": "Explain one well-defined scientific question with accurate words and graphics.",
+    "deliverable": "Original infographic and references",
+    "tags": [
+      "Design",
+      "Science",
+      "Infographics"
+    ],
+    "reference": "https://psyverse.fun/",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "no-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Puppeteer",
+      "HTML Canvas",
+      "SVG",
+      "Xiaohongshu API"
+    ]
+  },
+  {
+    "id": "bounty-hunter",
+    "title": "Open-source bounty screening",
+    "category": "tech",
+    "description": "Find public technical tasks with a clear scope and acceptance criteria.",
+    "deliverable": "Task shortlist and feasibility assessment",
+    "tags": [
+      "GitHub",
+      "Requirements",
+      "Testing"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "dev",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Algora API",
+      "GitHub GraphQL",
+      "Base EVM",
+      "Pytest",
+      "Claude 3.7",
+      "Hermetic Gates"
+    ]
+  },
+  {
+    "id": "producthunt-launcher",
+    "title": "Product launch preparation",
+    "category": "other",
+    "description": "Prepare materials that help target users understand and try a product.",
+    "deliverable": "Demo, introduction page and feedback questions",
+    "tags": [
+      "Product",
+      "Launch",
+      "Feedback"
+    ],
+    "reference": "https://www.producthunt.com/",
+    "verification": "Not yet verified",
+    "steps": [
+      "State the research question and testable hypotheses",
+      "Organize dated information with sources",
+      "Create a demo, sample or verifiable analysis",
+      "Record limitations, costs and the next validation step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "traffic",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Twitter API",
+      "Product Hunt API",
+      "Canva API",
+      "Discord"
+    ]
+  },
+  {
+    "id": "podcast-cloner",
+    "title": "Podcast summaries and captions",
+    "category": "content",
+    "description": "Create summaries, captions and excerpts from original or authorized audio.",
+    "deliverable": "Audio summary, captions and citation timestamps",
+    "tags": [
+      "Audio",
+      "Captions",
+      "Summaries"
+    ],
+    "reference": "https://github.com/openai/whisper",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the audience, purpose and narrative goal",
+      "Prepare the script, sources and readable storyboards",
+      "Produce a draft that can be played or read",
+      "Check content, captions and sound, and record feedback"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "content",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "once",
+    "searchTags": [
+      "OpenAI Whisper",
+      "FFmpeg",
+      "Bilingual Subtitles",
+      "Python"
+    ]
+  },
+  {
+    "id": "deep-research-service",
+    "title": "B2B industry research",
+    "category": "tech",
+    "description": "Gather evidence, comparisons and conclusions for one specific business decision.",
+    "deliverable": "Industry research brief with sources",
+    "tags": [
+      "Research",
+      "Data",
+      "Delivery"
+    ],
+    "reference": "https://psyverse.fun/atlas",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "consulting",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Perplexity API",
+      "Deep Research",
+      "Pandoc",
+      "Typst"
+    ]
+  },
+  {
+    "id": "global-seo-fleet",
+    "title": "Multilingual website localization",
+    "category": "tech",
+    "description": "Improve language, content and access around real user needs.",
+    "deliverable": "Localized pages and language QA notes",
+    "tags": [
+      "Websites",
+      "Languages",
+      "Search"
+    ],
+    "reference": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "saas",
+    "difficulty": "hardcore",
+    "currencies": [
+      "usd"
+    ],
+    "model": "once",
+    "searchTags": [
+      "Next.js i18n",
+      "DeepL API",
+      "Sitemap Generator",
+      "Cloudflare"
+    ]
+  },
+  {
+    "id": "game-asset-vending",
+    "title": "Game asset production",
+    "category": "digital",
+    "description": "Create original or licensed game assets with a consistent style and clear specifications.",
+    "deliverable": "Asset pack, format specifications and instructions",
+    "tags": [
+      "Games",
+      "Design",
+      "Assets"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the buyer or reader and their use case",
+      "Create a usable product draft",
+      "Check sources, instructions and delivery method",
+      "Invite a trial, record feedback and decide the next step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "vending",
+    "difficulty": "low-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Stable Diffusion",
+      "Blender Python API",
+      "Texture Synthesis"
+    ]
+  },
+  {
+    "id": "community-concierge",
+    "title": "Community knowledge bases",
+    "category": "tech",
+    "description": "Organize authorized material so members can find answers backed by sources.",
+    "deliverable": "Knowledge-base prototype and Q&A test set",
+    "tags": [
+      "Knowledge bases",
+      "Retrieval",
+      "Communities"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "Define the user, task scope and acceptance criteria",
+      "Build a minimum usable deliverable",
+      "Check normal inputs, failure cases and reproduction steps",
+      "Collect trial feedback and record actual effort and results"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "traffic",
+    "difficulty": "low-code",
+    "currencies": [
+      "cny"
+    ],
+    "model": "subscription",
+    "searchTags": [
+      "WeChat Bot",
+      "RAG Vector DB",
+      "FastAPI",
+      "Milvus"
+    ]
+  },
+  {
+    "id": "pod-merch-fleet",
+    "title": "Print-on-demand validation",
+    "category": "other",
+    "description": "Check delivery and costs using designs, samples and supplier information.",
+    "deliverable": "Sample acceptance checklist and cost record",
+    "tags": [
+      "Design",
+      "Supply chain",
+      "Validation"
+    ],
+    "reference": "https://github.com/gewenbo888",
+    "verification": "Not yet verified",
+    "steps": [
+      "State the research question and testable hypotheses",
+      "Organize dated information with sources",
+      "Create a demo, sample or verifiable analysis",
+      "Record limitations, costs and the next validation step"
+    ],
+    "checks": [
+      "Defined the task and acceptance criteria",
+      "Completed and checked the deliverable",
+      "Recorded target-user feedback",
+      "Recorded costs and results"
+    ],
+    "type": "ecommerce",
+    "difficulty": "no-code",
+    "currencies": [
+      "usd"
+    ],
+    "model": "product",
+    "searchTags": [
+      "Printify API",
+      "Etsy API",
+      "Midjourney",
+      "Vectorize"
+    ]
+  }
+]

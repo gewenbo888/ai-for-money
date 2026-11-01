@@ -279,7 +279,10 @@
   "默认排序": "Default order",
   "入门门槛优先": "Beginner-friendly first",
   "名称排序": "Name",
-  "重置全部": "Reset all"
+  "重置全部": "Reset all",
+  "交付工作台": "Delivery workspace",
+  "新建交付项目": "Start a delivery project",
+  "创建交付项目 →": "Create delivery project →"
 };
  const key = 'psy-site-language';
  const valid = value => value === 'en' || value === 'zh';

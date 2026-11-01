@@ -1,1 +1,6 @@
 .vercel
+
+.env*
+!.env.example
+*owner-access*.json
+*connection*.json

@@ -11,5 +11,10 @@
       "destination": "https://ai-for-money.psyverse.fun/$1",
       "permanent": true
     }
-  ]
+  ],
+  "functions": {
+    "api/generate.js": {
+      "maxDuration": 60
+    }
+  }
 }
