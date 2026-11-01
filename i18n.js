@@ -2,6 +2,9 @@
 (() => {
  'use strict';
  const words = {
+"开始第一个项目":"Start your first project",
+"开始制作":"Start making",
+"我的项目":"My projects",
   "跳至正文": "Skip to content",
   "主导航": "Main navigation",
   "全部": "All",

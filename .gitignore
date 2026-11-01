@@ -4,3 +4,5 @@
 !.env.example
 *owner-access*.json
 *connection*.json
+
+public/
