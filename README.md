@@ -30,6 +30,16 @@ Vercel 静态部署 `index.html`、`workbench.css`、`workbench.js` 与 `recipes
 
 交互检查覆盖项目搜索／筛选／空结果、详情与原生对话框、实验保存与刷新、损坏的本地记录、下载、金额为 0／缺失／负数／含小数及工时为 0 的情况。页面无收益保证，不收集私钥。
 
+## AI Bounties Süreci
+
+Bu projede AI bounties süreci şu adımları takip eder:
+
+1. **İssue Keşfetme:** GitHub'da belirli kriterlere uygun issues keşfedilir.
+2. **Minimum Yama Oluşturma:** Bulunan hatalar için minimum değişiklikler oluşturulur.
+3. **Test Yazma:** Her yamanın davranış seviyesindeki testleri yazılır ve çalıştırılır.
+4. **PR Açma:** Testler başarılı olduğunda, düzgün formatta bir PR açılır.
+5. **Anti-Spam Güvenlik:** Daha önce bahsedilen anti-spam kuralları uygulanır.
+
 Live: https://ai-for-money.psyverse.fun/
 GitHub: https://github.com/gewenbo888/ai-for-money
 
